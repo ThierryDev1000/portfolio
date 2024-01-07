@@ -387,7 +387,6 @@ html,body{
 .main-projetos-1{
     height: auto;
     width: auto;
-    border: solid 3px black;
     padding: 3vw;
     border: solid 3px blue;
 }
@@ -487,6 +486,7 @@ html,body{
     }
     .button-mobile{
         display: flex;
+        position: fixed;
     }
     .main-inicial-2{
         display: flex;
