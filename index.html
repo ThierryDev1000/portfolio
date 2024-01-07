@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <aside id="sidebar-id" class="sidebar">
+        <!-- <header class="sidebar-header">
+            <img class="logo-img" src="" alt="Foto do usuário"/>
+        </header> -->
+        <i id="arrow" class="fa-solid fa-arrow-right"></i>
+        <nav>
+            <button id="btn-inicio">
+                <span>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Inicio</span>
+                </span>
+            </button>
+            <button id="btn-sobre-mim">
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    <span>Sobre mim</span>
+                </span>
+            </button>
+            <button id="btn-soft-skills">
+                <span>
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <span>Soft skills</span>
+                </span>
+            </button>
+            <button id="btn-hard-skills">
+                <span>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Hard skills</span>
+                </span>
+            </button>
+            <button id="btn-projetos">
+                <span>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Projetos</span>
+                </span>
+            </button>
+            <button id="btn-certificacoes">
+                <span>
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Certificações</span>
+                </span>
+            <!-- </button>
+            <button id="btn-objetivos">
+                <span>
+                    <i class="fa-solid fa-bullseye"></i>
+                    <span>Objetivos</span>
+                </span>
+            </button> -->
+            <!-- <button id="btn-contatos">
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contatos</span>
+                </span>
+            </button> -->
+        </nav>
+    </aside>
+    <!-- MENU MOBILE -->
+    <button class="button-mobile" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+        <span>Menu</span>
+    </button>
+    <nav class="menu-mobile" id="menu-mobile">
+        <button onclick="toggleMenu()">
+            <span>
+                <span class="mobile-text">X</span>
+            </span>
+        </button>
+        <button id="btn-mobile-sobre-mim">
+            <span>
+                <i class="fa-solid fa-user"></i>
+                <span class="mobile-text">Sobre mim</span>
+            </span>
+        </button>
+        <button id="btn-mobile-soft-skills">
+            <span>
+                <i class="fa-solid fa-fingerprint"></i>
+                <span class="mobile-text">Soft skills</span>
+            </span>
+        </button>
+        <button id="btn-mobile-hard-skills">
+            <span>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="mobile-text">Hard skills</span>
+            </span>
+        </button>
+        <button id="btn-mobile-projetos">
+            <span>
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="mobile-text">Projetos</span>
+            </span>
+        </button>
+        <button id="btn-mobile-certificacoes">
+            <span>
+                <i class="fa-solid fa-medal"></i>
+                <span class="mobile-text">Certificações</span>
+            </span>
+        </button>
+        <!-- <button id="btn-mobile-contatos">
+            <span>
+                <i class="fa-solid fa-envelope"></i>
+                <span class="mobile-text">Contatos</span>
+            </span>
+        </button> -->
+    </nav>
+    <session id="sess-inicial">
+        <div class="main-inicial">
+            <div class="main-inicial-1">
+                <div id="btn-download-curriculo" class="button">
+                    <div class="icon"><i class="fa-regular fa-circle-down"></i></div>
+                    <span>Curriculo</span>
+                </div>
+                <div id="btn-github" class="button">
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <span>Github</span>
+                </div>
+                <div id="btn-linkedin" class="button">
+                    <div class="icon"><i class="fab fa-linkedin"></i></div>
+                    <span>Linkedin</span>
+                </div>
+            </div>
+            <div class="main-inicial-2">
+                <div class="main-inicial-2-1">
+                    <p class="ola">Olá, seja bem vindo(a)!</p>
+                    <p class="ola">ao meu Portfólio.</p>
+                </div>
+                <div class="main-inicial-2-2">
+                    <img id="img-perfil" class="rounded-3 border border-5" src="image/perfil.png">
+                </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-sobre-mim">
+        <div class="main-sobre-mim">
+            <div id="banner" class="carousel slide" data-bs-ride="carousel">
+                <div id="indicadores" class="carousel-indicators">
+                    <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+                </div>
+
+                <div id="frases" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption w-70">
+                            <h3>Sobre mim</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption w-70">
+                            <h3 id="h3-sobre">Conheça um pouco da minha historia com a tecnologia!</h3>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            </div>
+            <div class="sobre-mim-texto">
+                <P>É um grande prazer recebe-lo(a) aqui no meu portfólio. Me chamo Vinnicius Thierry e construi esse portfólio do zero para evidenciar um pouco da minha historia com a TI.</P>
+                <P>Desde que me entendo por gente, sempre tive contato com a teclonologia. Isso começou quando minha mãe (gerente chefe de compras) me ensinava tudo que sabia do pacote office.</P>
+                <P>Aliás, diria que sou o TI da familia, porque sempre me chamam, seja para descobrir porque a internet caiu ou porque o controle da TV não está funcionando :) rsrsrsrs</P>
+                <P>Antes de formar o ensino médio, minha mãe me matriculou no "Curso Técnico de Informatica" do SENAC. Depois do ensino médio, entrei para a faculdade de "Engenharia de Software".</P>
+                <P>Ao mesmo tempo, senti que a faculdade não proporcionava muita prática. Então, em paralelo entrei para o curso "Tecnico em Desenvolvimento de Sistemas" do SENAI - Florianopolis.</P>
+                <P>Acredito, que por ser uma área muito vasta. Morremos e não aprendemos tudo. Então, para acumular o maximo de conhecimento possivel, sempre estou fazendo um curso ou outro. Literalmente.</P>
+                <P>Ao longo do tempo percebi que é inevitável se deparar com "bugs", seja de código, ambientes, dentre outros. Afinal, quem nunca esqueceu aquela ponto e virgula :)</P>
+                <P>Mas, posso afirmar que no final das contas, acredito que ter uma ótima lógica de programação me torna capaz de resolver problemas com soluções adequadas.</P>
+            </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-soft-skills">
+        <div class="main-soft-skills">
+            <div class="main-soft-skills-1">
+                <div class="soft-skills-titulo"><h3> Minhas Soft Skills</h3></div>
+                <div class="soft-skills-cards">
+                    <div class="uni-card">
+                        <h4>Proatividade</h4>
+                        <P>Acredito ter iniciativa para buscar soluções impostas pelo meio. A missão pode ser cumprida ainda que não tenha sido dada, desde que influencie positivamente.</P>
+                    </div>
+                    <div class="uni-card">
+                        <h4>Criatividade</h4>
+                        <P>Aprendi que estudando e mantendo atualizado. Nunca faltará aquela ideia inovadora que fará diferença entre o sucesso e o "passe-composé".</P>
+                    </div>
+                    <div class="uni-card">
+                        <h4>Comunicação</h4>
+                        <P>Comunicação assertiva. O que seria de mim sem ela? Transmitir e receber mensagens sem perda de informação é imprescindivel para uma equipe.</P>
+                    </div>
+                    <div class="uni-card">
+                        <h4>Trab. em equipe</h4>
+                        <P>Trabalhar em equipe exige flexiblidade com as limitações dos outros e de sí. No final, o respeito e paciencia devem sempre existir.</P>
+                    </div>
+                    <div class="uni-card">
+                        <h4>Etica no Trabalho</h4>
+                        <P>Respeitar as regras da instituição onde atuo e da profissão. Ser profissional e manter os valores morais com clientes, colegas e a instituição.</P>
+                    </div>
+                    <div class="uni-card">
+                        <h4>Empatia</h4>
+                        <P>O ambiente de trabalho pode ser descontraido, não precisamos ser mecânicos. Podemos socializar e fazer amigos. Um pode ajudar o outro.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-hard-skills">
+        <div class="main-hard-skills">
+            <div class="main-hard-skills-1">
+                <div class="hard-skills-titulo"><h3>Hard Skills</h3></div>
+                <div class="hard-skills-cards">
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-java"></i>
+                            <p>Java</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-java"></i>
+                            <p>Servlets</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern2-uni-hard">
+                            <p>Springboot</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-js"></i>
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern2-uni-hard">
+                            <p>PL SQL</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-solid fa-database"></i>
+                            <p>My SQL</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-bootstrap"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern2-uni-hard">
+                            <p>Jquery</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern-uni-hard">
+                            <i id="icon-hard-skills" class="fa-brands fa-git"></i>
+                            <p>Git</p>
+                        </div>
+                    </div>
+                    <div class="uni-hard-skills-cards">
+                        <div class="intern2-uni-hard">
+                            <p>Pipeline + CI e CD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-projetos">
+        <div class="main-projetos">
+            <div class="main-projetos-1">
+                <div class="main-projetos-titulo"><h3>Projetos</h3></div>
+                <div class="main-projetos-cards">
+                    <button class="button-projects" data-bs-toggle="modal" data-bs-target="#vitrine-virtual">
+                        <div class="intern-layout-project">
+                            <img class="img-project" src="image/vitrine-virtual.png">
+                            <p>Vitrine Virtual</p>
+                        </div>
+                    </button>
+                    <button class="button-projects" data-bs-toggle="modal" data-bs-target="#api-rest">
+                        <div class="intern-layout-project">
+                            <img class="img-project" src="image/rest-api.png">
+                            <p>API REST</p>
+                        </div>
+                    </button>
+                    <button class="button-projects" data-bs-toggle="modal" data-bs-target="#one-page">
+                        <div class="intern-layout-project">
+                            <img class="img-project" src="image/html-img.jpg">
+                            <p>Site One Page</p>
+                        </div>
+                    </button>
+                    <div id="vitrine-virtual" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Vitrine Virtual</h3>
+                                    <button id="button-x-modal-project" type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <P>O objetivo desse projeto é ter uma plataforma para o administrador postar seus produtos/ serviços.</P>
+                                    <P>As informações são consumidar por outra plataforma para os clientes acompanharem os lançamentos.</P><hr>
+                                    <P>TECNOLOGIAS: JAVA, Servlets, HTML5, CSS3, Bootstrap, Jquery</P>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="button-close-modal-project" type="button" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="api-rest" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>API Rest</h3>
+                                    <button id="button-x-modal-project" type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>O objetivo desse projeto foi construir uma API simples capaz de realizar comandos simples de CRUD.</p>
+                                    <p>É um código que facilmente pode ser adaptado a outros projetos.</p><hr>
+                                    <p>TECNOLOGIAS: Java, Springboot, testes com Insomnia</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="button-close-modal-project" type="button" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="one-page" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Site One Page</h3>
+                                    <button id="button-x-modal-project" tyepe="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>O objetivo desse projeto foi criar um site responsivo de página única.</p>
+                                    <p>Ele pode ser utilizado por comerciantes e prestadores de serviços para promover de forma econômica o marketing de sua instituição.</p><hr>
+                                    <p>TECNOLOGIA: HTML5, CSS3, Bootstrap, Jquery</p><hr>
+                                    <P>Link exemplo One Page <a href="https://thierrydev1000.github.io/onepage/" class="text-decoration-none" target="_blank">aqui</a></P>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="button-close-modal-project" type="button" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-certificacoes">
+        <div class="main-certificacoes">
+            <div class="main-certificacoes-1">
+                <div class="main-certificacoes-titulo"><h3>Certificações</h3></div>
+                <div class="main-certificacoes-cards">
+                    <div class="uni-certificacoes-card">
+                        <div class="intern-certificacoes-cards">
+                            <P>Técnico em Desenvolvimento de Sistemas</P>
+                            <p>Senai - SC</p>
+                        </div>
+                    </div>
+                    <div class="uni-certificacoes-card">
+                        <div class="intern-certificacoes-cards">
+                            <P>Java Web Avançado</P>
+                            <p>Udemy</p>
+                        </div>
+                    </div>
+                    <div class="uni-certificacoes-card">
+                        <div class="intern-certificacoes-cards">
+                            <P>Jquery</P>
+                            <p>Udemy</p>
+                        </div>
+                    </div>
+                    <div class="uni-certificacoes-card">
+                        <div class="intern-certificacoes-cards">
+                            <P>CI e CD + Pipeline</P>
+                            <p>Alura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+    <session id="sess-contatos">
+        <div class="main-contatos">
+        </div>
+    </session>
+    <script src="script.js"></script>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // BOTÕES LATERAIS
+            $('#btn-inicio').click(function(){
+                $(location).attr('href','#sess-inicial');
+            });
+            $('#btn-sobre-mim').click(function(){
+                $(location).attr('href','#sess-sobre-mim');
+            });
+            $('#btn-soft-skills').click(function(){
+                $(location).attr('href','#sess-soft-skills');
+            });
+            $('#btn-hard-skills').click(function(){
+                $(location).attr('href','#sess-hard-skills');
+            });
+            $('#btn-projetos').click(function(){
+                $(location).attr('href','#sess-projetos')
+            });
+            $('#btn-certificacoes').click(function(){
+                $(location).attr('href','#sess-certificacoes')
+            });
+            // BOTÕES MOBILE
+            $('#btn-mobile-sobre-mim').click(function(){
+                $('#menu-mobile').removeClass("menu-mobile-active").addClass("menu-mobile");
+                $(location).attr('href','#sess-sobre-mim');
+            });
+            $('#btn-mobile-soft-skills').click(function(){
+                $('#menu-mobile').removeClass("menu-mobile-active").addClass("menu-mobile");
+                $(location).attr('href','#sess-soft-skills');
+            });
+            $('#btn-mobile-hard-skills').click(function(){
+                $('#menu-mobile').removeClass("menu-mobile-active").addClass("menu-mobile");
+                $(location).attr('href','#sess-hard-skills');
+            });
+            $('#btn-mobile-projetos').click(function(){
+                $('#menu-mobile').removeClass("menu-mobile-active").addClass("menu-mobile");
+                $(location).attr('href','#sess-projetos');
+            });
+            $('#btn-mobile-certificacoes').click(function(){
+                $('#menu-mobile').removeClass("menu-mobile-active").addClass("menu-mobile");
+                $(location).attr('href','#sess-certificacoes');
+            });
+            // BOTÃO CURRICULO
+            $('#btn-download-curriculo').click(function(e){
+                e.preventDefault();
+                window.location.href = 'documentos/curriculo.pdf';
+            });
+            $('#btn-github').click(function(){
+                $(location).attr('href','https://github.com/ThierryDev1000?tab=repositories');
+            });
+            $('#btn-linkedin').click(function(){
+                $(location).attr('href','https://br.linkedin.com/in/vinn%C3%ADcius-thierry-developer');
+            });
+            // OUTROS
+            $('#sidebar-id').hover(function(){
+                $('.sidebar').css(
+                    'width','170px'
+                );
+                $('#arrow').hide();
+            },function(){
+                $('.sidebar').css(
+                    'width','45px'
+                );
+                $('#arrow').show();
+            });
+            $('.sobre-mim-texto p').hover(function(){
+                $(this).css({
+                    "color":"white",
+                });
+            }, function(){
+                $(this).css({
+                    "color":"#DDCEC6",
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
